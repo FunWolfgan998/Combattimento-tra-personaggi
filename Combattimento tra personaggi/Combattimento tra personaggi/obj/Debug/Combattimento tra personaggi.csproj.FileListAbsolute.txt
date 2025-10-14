@@ -1,0 +1,47 @@
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe.config
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.pdb
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.AssemblyReference.cache
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.SuggestedBindingRedirects.cache
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Form1.resources
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Properties.Resources.resources
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.GenerateResource.cache
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.CoreCompileInputs.cache
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe
+C:\Users\12999510\Desktop\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.pdb
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe.config
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.pdb
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.AssemblyReference.cache
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe.config
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Form1.resources
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Properties.Resources.resources
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.GenerateResource.cache
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe
+C:\Users\Cristian\Desktop\Combattimento tra personaggi.zip-20251013T184224Z-1-001\Combattimento tra personaggi\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.pdb
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.AssemblyReference.cache
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe.config
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.CardControl.resources
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Form1.resources
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Properties.Resources.resources
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.GenerateResource.cache
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.CoreCompileInputs.cache
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.pdb
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe.config
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe
+E:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.pdb
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe.config
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.exe
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\bin\Debug\Combattimento tra personaggi.pdb
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.AssemblyReference.cache
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.SuggestedBindingRedirects.cache
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe.config
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.CardControl.resources
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Form1.resources
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento_tra_personaggi.Properties.Resources.resources
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.GenerateResource.cache
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.csproj.CoreCompileInputs.cache
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.exe
+D:\Progetti info 4aBII\Combattimento tra personaggi\Combattimento tra personaggi\obj\Debug\Combattimento tra personaggi.pdb
