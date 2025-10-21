@@ -35,7 +35,9 @@ namespace Combattimento_tra_personaggi
             UI();
 
         }
+        #region Logica gioco
 
+        #endregion
 
         private List<Character> CreateDeck(int deck_dimension)
         {
@@ -62,15 +64,6 @@ namespace Combattimento_tra_personaggi
             return cards;
         }
 
-        private void UI()
-        {
-            pnl_AttackingCardArea.Location = new Point(this.Width / 2 - 250, this.Height / 2 - 150);
-            pnl_TargetCardArea.Location = new Point(this.Width / 2 + 50, this.Height / 2 - 150);
-            pnl_AttackingCardArea.BorderStyle = BorderStyle.FixedSingle;
-            pnl_TargetCardArea.BorderStyle = BorderStyle.FixedSingle;
-            pnl_AttackingCardArea.SendToBack();
-            pnl_TargetCardArea.SendToBack();
-        }
         private void CreateCardsofDesks()
         {
             player1_cardControls = new List<CardControl>();
@@ -108,15 +101,8 @@ namespace Combattimento_tra_personaggi
                 cardControl.ShowBack();
             }
 
-            // Aggiungi un bottone per girare tutte le carte (utile per test o per azioni di gioco)
-            Button btnFlipAll = new Button();
-            btnFlipAll.Text = "Gira Tutte le Carte Visibili"; // O "Svela Deck Bot"
-            btnFlipAll.Location = new Point(50, this.Height - 80); // Posiziona in basso al form
-            btnFlipAll.AutoSize = true; // Adatta la dimensione al testo
-            btnFlipAll.Click += BtnFlipAll_Click;
-            this.Controls.Add(btnFlipAll);
         }
-
+        //gestisce cosa accade quado si preme il pulsante attacca.
         private async void Card_ActionClicked(object sender, EventArgs e)
         {
             if (!(sender is CardControl clickedCard) || clickedCard.Character == null) return;
@@ -166,7 +152,7 @@ namespace Combattimento_tra_personaggi
             }
             // CASO 3: C'È GIÀ UN ATTACCANTE SUL CAMPO
             // L'unica azione permessa è deselezionare l'attaccante.
-            else if (attackingCard != null)
+            else if (targetCard != null && attackingCard != null)
             {
                 if (clickedCard == attackingCard)
                 {
@@ -174,6 +160,7 @@ namespace Combattimento_tra_personaggi
                     await MoveCardBackToHand(attackingCard);
                     attackingCard = null;
                     btt_turn.Text = "Passa Turno"; // Il testo torna a "Passa Turno" perché c'è solo il target
+                   
                     btt_turn.Enabled = (targetCard != null); // Abilitato solo se il target è ancora lì
                 }
                 else
@@ -189,35 +176,9 @@ namespace Combattimento_tra_personaggi
             bool isPlayer1Card = player1_cardControls.Contains(card);
             return (IsPlayer1_turn && isPlayer1Card) || (!IsPlayer1_turn && !isPlayer1Card);
         }
- 
-
-        // Metodo per riportare una carta alla sua posizione originale
-        private async Task MoveCardBackToHand(CardControl card)
-        {
-            if (card.Tag is Point originalLocation)
-            {
-                Point startLocation = card.Location;
-                int duration = 300;
-                int steps = 20;
-                int delay = duration / steps;
-
-                float deltaX = (float)(originalLocation.X - startLocation.X) / steps;
-                float deltaY = (float)(originalLocation.Y - startLocation.Y) / steps;
-
-                for (int i = 0; i < steps; i++)
-                {
-                    card.Location = new Point(
-                        (int)(startLocation.X + deltaX * i),
-                        (int)(startLocation.Y + deltaY * i)
-                    );
-                    await Task.Delay(delay);
-                }
-                card.Location = originalLocation; // Assicurati che sia alla posizione esatta
-            }
-        }
 
         // Metodo per eseguire il combattimento
-               private async Task PerformCombat(CardControl attacker, CardControl defender)
+        private async Task PerformCombat(CardControl attacker, CardControl defender)
         {
             if (attacker == null || defender == null) return;
 
@@ -256,11 +217,8 @@ namespace Combattimento_tra_personaggi
 
             // --- AGGIORNAMENTO DELLO STATO DEL GIOCO ---
             this.targetCard = attacker;      // L'attaccante è ORA il target
-            this.attackingCard = null;     // Non c'è più un attaccante in attesa
-                                           // ------------------------------------------
-
+            this.attackingCard = null;
         }
-
         private async void btt_turn_Click(object sender, EventArgs e)
         {
             // Disabilita il pulsante per evitare doppi click
@@ -284,11 +242,6 @@ namespace Combattimento_tra_personaggi
                 // Esegui la sequenza di combattimento
                 await PerformCombat(attackingCard, targetCard);
 
-                // Resetta lo stato di gioco
-                targetCard = attackingCard;
-                attackingCard = null;
-                
-
                 // Cambia il turno
                 IsPlayer1_turn = !IsPlayer1_turn;
                 MessageBox.Show(IsPlayer1_turn ? "Ora è il turno del Giocatore 1" : "Ora è il turno del Giocatore 2");
@@ -300,7 +253,39 @@ namespace Combattimento_tra_personaggi
         }
 
         #region UI
-        //MoveCardToArea done
+        // Metodo per riportare una carta alla sua posizione originale
+        private void UI()
+        {
+            pnl_AttackingCardArea.Location = new Point(this.Width / 2 - 250, this.Height / 2 - 150);
+            pnl_TargetCardArea.Location = new Point(this.Width / 2 + 50, this.Height / 2 - 150);
+            pnl_AttackingCardArea.BorderStyle = BorderStyle.FixedSingle;
+            pnl_TargetCardArea.BorderStyle = BorderStyle.FixedSingle;
+            pnl_AttackingCardArea.SendToBack();
+            pnl_TargetCardArea.SendToBack();
+        }
+        private async Task MoveCardBackToHand(CardControl card)
+        {
+            if (card.Tag is Point originalLocation)
+            {
+                Point startLocation = card.Location;
+                int duration = 300;
+                int steps = 20;
+                int delay = duration / steps;
+
+                float deltaX = (float)(originalLocation.X - startLocation.X) / steps;
+                float deltaY = (float)(originalLocation.Y - startLocation.Y) / steps;
+
+                for (int i = 0; i < steps; i++)
+                {
+                    card.Location = new Point(
+                        (int)(startLocation.X + deltaX * i),
+                        (int)(startLocation.Y + deltaY * i)
+                    );
+                    await Task.Delay(delay);
+                }
+                card.Location = originalLocation; // Assicurati che sia alla posizione esatta
+            }
+        }
         private async Task MoveCardToArea(CardControl card, Panel targetArea)
         {
             // Salva la posizione originale della carta prima di spostarla
@@ -326,18 +311,6 @@ namespace Combattimento_tra_personaggi
             }
             card.Location = targetLocation; // Assicurati che sia alla posizione esatta
         }
-
-        private async void BtnFlipAll_Click(object sender, EventArgs e)
-        {
-            foreach (var card in player1_cardControls)
-            {
-                await card.Flip();
-            }
-            foreach (var card in player2_cardControls)
-            {
-                await card.Flip();
-            }
-        }
         private async Task FlipDecksForTurnChange()
         {
             // Creiamo una lista di Task da eseguire in parallelo.
@@ -346,6 +319,11 @@ namespace Combattimento_tra_personaggi
             // Gira le carte del giocatore 1
             foreach (var card in player1_cardControls)
             {
+                if (card == targetCard || card == attackingCard)
+                {
+                    card.ShowFront();
+                    continue;
+                }
                 // Se è il turno del giocatore 1, le sue carte devono essere scoperte (IsFrontVisible = true).
                 // Se non lo sono, le giriamo.
                 if (IsPlayer1_turn && !card.IsFrontVisible)
@@ -354,7 +332,7 @@ namespace Combattimento_tra_personaggi
                 }
                 // Se non è il turno del giocatore 1, le sue carte devono essere coperte.
                 // Se non lo sono, le giriamo.
-                else if (!IsPlayer1_turn && card.IsFrontVisible)
+                else if (!IsPlayer1_turn && card.IsFrontVisible&&(card!=targetCard||card!=attackingCard))
                 {
                     flipTasks.Add(card.Flip());
                 }
@@ -363,8 +341,13 @@ namespace Combattimento_tra_personaggi
             // Gira le carte del giocatore 2
             foreach (var card in player2_cardControls)
             {
-                // Se non è il turno del giocatore 1 (quindi è del giocatore 2), le sue carte devono essere scoperte.
-                if (!IsPlayer1_turn && !card.IsFrontVisible)
+                if (card == targetCard || card == attackingCard)
+                {
+                    card.ShowFront();
+                    continue;
+                }
+                    // Se non è il turno del giocatore 2, le sue carte devono essere scoperte.
+                    if (!IsPlayer1_turn && !card.IsFrontVisible)
                 {
                     flipTasks.Add(card.Flip());
                 }
@@ -377,6 +360,7 @@ namespace Combattimento_tra_personaggi
 
             // Attendi che tutte le animazioni di flip siano completate.
             await Task.WhenAll(flipTasks);
+            
         }
         #endregion
     }
